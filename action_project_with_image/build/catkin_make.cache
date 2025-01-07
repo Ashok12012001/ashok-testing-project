@@ -1,0 +1,2 @@
+server_project
+-DCATKIN_DEVEL_PREFIX=/home/ashokd/projects/action_project_with_image/devel -DCMAKE_INSTALL_PREFIX=/home/ashokd/projects/action_project_with_image/install -G Unix Makefiles

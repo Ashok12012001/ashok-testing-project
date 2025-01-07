@@ -1,0 +1,8 @@
+prefix=/home/ashokd/projects/turtlebot_test/install
+
+Name: turtlebot3_navigation
+Description: Description of turtlebot3_navigation
+Version: 1.2.6
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

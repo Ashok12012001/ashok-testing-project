@@ -1,0 +1,2 @@
+my_amr_pkg
+-DCATKIN_DEVEL_PREFIX=/home/ashokd/projects/mastering_manual/devel -DCMAKE_INSTALL_PREFIX=/home/ashokd/projects/mastering_manual/install -G Unix Makefiles

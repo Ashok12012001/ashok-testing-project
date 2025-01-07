@@ -1,0 +1,2 @@
+set(asho_MESSAGE_FILES "/home/ashokd/projects/ashok_ws/devel/share/asho/msg/ActionNameAction.msg;/home/ashokd/projects/ashok_ws/devel/share/asho/msg/ActionNameActionGoal.msg;/home/ashokd/projects/ashok_ws/devel/share/asho/msg/ActionNameActionResult.msg;/home/ashokd/projects/ashok_ws/devel/share/asho/msg/ActionNameActionFeedback.msg;/home/ashokd/projects/ashok_ws/devel/share/asho/msg/ActionNameGoal.msg;/home/ashokd/projects/ashok_ws/devel/share/asho/msg/ActionNameResult.msg;/home/ashokd/projects/ashok_ws/devel/share/asho/msg/ActionNameFeedback.msg")
+set(asho_SERVICE_FILES "")

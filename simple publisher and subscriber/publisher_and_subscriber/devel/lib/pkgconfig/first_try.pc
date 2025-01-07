@@ -1,0 +1,8 @@
+prefix=/home/ashokd/projects/publisher_and_subscriber/devel
+
+Name: first_try
+Description: Description of first_try
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

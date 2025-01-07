@@ -1,0 +1,8 @@
+prefix=/home/ashokd/projects/stuck_up/install
+
+Name: server_project
+Description: Description of server_project
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -lcamera_service_server
+Requires: roscpp std_msgs sensor_msgs

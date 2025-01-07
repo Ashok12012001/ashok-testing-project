@@ -1,0 +1,18 @@
+<package format="2">
+  <name>server_project</name>
+  <version>0.0.0</version>
+  <description>The server_project package</description>
+
+  <maintainer email="ashokd@todo.todo">ashokd</maintainer>
+  <license>TODO</license>
+
+  <depend>roscpp</depend>
+  <depend>std_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>cv_bridge</depend>
+  <build_depend>message_generation</build_depend> 
+  <exec_depend>message_runtime</exec_depend> 
+  <exec_depend>message_generation</exec_depend>  <!-- Add this line -->
+
+  <buildtool_depend>catkin</buildtool_depend>
+</package>

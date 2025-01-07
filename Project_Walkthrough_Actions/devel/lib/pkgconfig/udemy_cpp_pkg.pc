@@ -1,0 +1,8 @@
+prefix=/home/ashokd/Downloads/Project_Walkthrough_Actions/devel
+
+Name: udemy_cpp_pkg
+Description: Description of udemy_cpp_pkg
+Version: 0.0.0
+Cflags: -I/home/ashokd/Downloads/Project_Walkthrough_Actions/devel/include
+Libs: -L${prefix}/lib 
+Requires: 

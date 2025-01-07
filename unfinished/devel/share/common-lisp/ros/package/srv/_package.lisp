@@ -1,0 +1,10 @@
+(cl:defpackage package-srv
+  (:use )
+  (:export
+   "IMAGEPROCESSING"
+   "<IMAGEPROCESSING-REQUEST>"
+   "IMAGEPROCESSING-REQUEST"
+   "<IMAGEPROCESSING-RESPONSE>"
+   "IMAGEPROCESSING-RESPONSE"
+  ))
+

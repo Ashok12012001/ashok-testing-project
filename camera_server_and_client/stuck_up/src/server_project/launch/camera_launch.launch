@@ -1,0 +1,6 @@
+<launch>
+  
+  <param name="rotation_degree" type="int" value="0"/>
+  <node name="camera_service" pkg="camera_pkg" type="camera_service_node" output="screen"/>
+</launch>
+

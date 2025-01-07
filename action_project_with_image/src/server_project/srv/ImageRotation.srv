@@ -1,0 +1,5 @@
+sensor_msgs/Image input_image
+float64 rotation_angle
+---
+sensor_msgs/Image output_image
+

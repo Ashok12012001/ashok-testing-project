@@ -1,0 +1,5 @@
+# CameraControl.srv
+float32 angle   # Requested camera angle
+---
+sensor_msgs/Image image   # Response: Pre-taken image
+

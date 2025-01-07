@@ -1,0 +1,8 @@
+prefix=/home/ashokd/projects/ashok_ws/devel
+
+Name: asho
+Description: Description of asho
+Version: 0.0.0
+Cflags: -I/home/ashokd/projects/ashok_ws/devel/include
+Libs: -L${prefix}/lib 
+Requires: roscpp std_msgs actionlib message_runtime actionlib_msgs geometry_msgs

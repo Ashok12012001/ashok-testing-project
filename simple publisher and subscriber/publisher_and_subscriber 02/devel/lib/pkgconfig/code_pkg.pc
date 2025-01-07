@@ -1,0 +1,8 @@
+prefix=/home/ashokd/projects/publisher_and_subscriber 02/devel
+
+Name: code_pkg
+Description: Description of code_pkg
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,4 @@
+<launch>
+    <rosparam file="$(find my_amr_pkg)/config/robot_params.yaml" command="load" />
+    <node pkg="my_amr_pkg" type="robot_node" name="robot_controller" output="screen" />
+</launch>

@@ -1,0 +1,2 @@
+code_pkg
+-DCATKIN_DEVEL_PREFIX=/home/ashokd/projects/publisher_and_subscriber 02/devel -DCMAKE_INSTALL_PREFIX=/home/ashokd/projects/publisher_and_subscriber 02/install -G Unix Makefiles

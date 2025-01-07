@@ -1,0 +1,8 @@
+prefix=/home/ashokd/projects/mastering_manual/install
+
+Name: my_amr_pkg
+Description: Description of my_amr_pkg
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: geometry_msgs roscpp rospy sensor_msgs std_msgs
