@@ -1,0 +1,8 @@
+<launch>
+
+ <node name="gmapping" pkg="gmapping" type="slam_gmapping">
+    <rosparam file="$(find motor_controller)/config/gmapping.yaml" command="load"/>
+
+     </node>
+</launch>
+

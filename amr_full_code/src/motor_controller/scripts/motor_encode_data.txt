@@ -1,0 +1,55 @@
+Wheel Diameter = 16.5 cm
+
+Encoder data
+
+1. -91547 = forward
+    90166 = Reverse
+    
+2. -90521 = forward
+    90761 = Reverse
+
+3. -90007 = forward
+    89467 = Reverse    
+
+4. -89826 = forward
+    89892 = Reverse
+
+5. -90515 = forward
+    90163 = Reverse          
+
+
+Name Engineering unit Internalunit Conversion
+Velocity         rpm    DEC        DEC=[(RPM*512*encoder resolution)/1875]
+Acceleration            DEC        DEC=[(RPS/S*65536*encoder resolution)/4000000]
+Current          A      DEC        1Arms=（2048/(driver peak current )Ipeak/1.414）de   
+
+example
+our motor encoder resolution = 4096 (65536 position) 
+RPM  = (DEC=(1875RPM×512×encoder resolution​)  DEC for 1 RPM=1875512×4096​=1119.64)
+
+
+1RPM=2730dec (Encoder resolution 10000)!It is assumed that speed is 10rpm, user need to write
+27300dec (6AA4 in HEX)    
+    
+single turn encoder
+
+
+Profile_acceleration and Profile_deceleration
+DEC=[(RPM*512*Encoder Resolution)/1875] 
+⚫ Default unit of Profileacc/dec
+DEC=[(RPS/S*65536* Encoder Resolution)/1000/ 4000]
+
+
+
+parameter
+address Name value message (ID=1)
+60600008 Operation_Mode 3 send→601 2F 60 60 00 03 00 00 00
+receive←581 60 60 60 00 03 00 00 00
+60FF0020 Target_Speed -100RPM send→601 23 FF 60 00 7E B1 E4 FF
+receive←581 60 FF 60 00 7E B1 E4 FF
+60400010 Controlword 2F send→601 2B 40 60 00 2F 00 00 00
+receive←581 60 40 60 00 2F 00 00 00
+60830020 Profile_Acc 100rps/s send→601 23 83 60 00 6E A3 01 00
+receive←581 60 83 60 00 6E A3 01 00
+60840020 Profile_Dec 100rps/s send→601 23 84 60 00 6E A3 01 00
+receive←581 60 84 60 00 6E A3 01 00

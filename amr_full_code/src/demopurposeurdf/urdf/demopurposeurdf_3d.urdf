@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="demopurposeurdf">
+
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.000369478535072079 3.27878586680249E-07 0.210287077180161"
+        rpy="0 0 0" />
+      <mass
+        value="2.13065022529547" />
+      <inertia
+        ixx="0.0748859599390936"
+        ixy="-2.38576481833671E-08"
+        ixz="1.74279628117646E-06"
+        iyy="0.08169894960657"
+        iyz="-3.76721213362902E-09"
+        izz="0.156426526931738" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://main_assembly/meshes/base_foot_print.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://main_assembly/meshes/base_foot_print.STL" />
+      </geometry>
+    </collision>
+  </link>
+   <joint
+    name="chassis_joint"
+    type="fixed">
+    <origin
+      xyz="-0.00045329 0 0.168"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="chassis" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      effort="10"
+      velocity="10" />
+    <dynamics
+      damping="0.1"
+      friction="0.1" />
+  </joint>
+  <link
+    name="chassis">
+    <inertial>
+      <origin
+        xyz="0.0112636456561273 3.70434140528805E-05 -0.0136768281801966"
+        rpy="0 0 0" />
+      <mass
+        value="31.0535262650509" />
+      <inertia
+        ixx="0.455578892879442"
+        ixy="7.65711475945196E-06"
+        ixz="-0.000523099661362644"
+        iyy="6.26927269470911"
+        iyz="-2.53928857450884E-07"
+        izz="6.71389413977248" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://demopurposeurdf/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.650980392156863 0.619607843137255 0.588235294117647 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://demopurposeurdf/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="left_wheel_link">
+    <inertial>
+      <origin
+        xyz="-8.21390477023003E-05 -0.0493237542363328 9.25504399129917E-05"
+        rpy="0 0 0" />
+      <mass
+        value="1.26054692830958" />
+      <inertia
+        ixx="0.00196877013105926"
+        ixy="1.23316949895335E-06"
+        ixz="-3.46362262503123E-06"
+        iyy="0.00374518022740929"
+        iyz="1.33645380659957E-06"
+        izz="0.00217237650668408" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://demopurposeurdf/meshes/left_wheel_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.250980392156863 0.250980392156863 0.250980392156863 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://demopurposeurdf/meshes/left_wheel_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_wheel_joint"
+    type="continuous">
+    <origin
+      xyz="-1.3132E-05 0.16403 -0.0862"
+      rpy="0 0 0" />
+    <parent
+      link="chassis" />
+    <child
+      link="left_wheel_link" />
+    <axis
+      xyz="-0.00017269 1 0" />
+    <limit
+      effort="10"
+      velocity="10" />
+    <dynamics
+      damping="0.1"
+      friction="0.1" />
+  </joint>
+  <link
+    name="right_wheel_link">
+    <inertial>
+      <origin
+        xyz="8.2139047702492E-05 0.0493237542363329 9.25504399119648E-05"
+        rpy="0 0 0" />
+      <mass
+        value="1.26054692830959" />
+      <inertia
+        ixx="0.00196877013105926"
+        ixy="1.23316949896343E-06"
+        ixz="3.46362262503083E-06"
+        iyy="0.00374518022740929"
+        iyz="-1.33645380662991E-06"
+        izz="0.00217237650668408" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://demopurposeurdf/meshes/right_wheel_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.250980392156863 0.250980392156863 0.250980392156863 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://demopurposeurdf/meshes/right_wheel_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_wheel_joint"
+    type="continuous">
+    <origin
+      xyz="1.3132E-05 -0.16403 -0.0862"
+      rpy="0 0 0" />
+    <parent
+      link="chassis" />
+    <child
+      link="right_wheel_link" />
+    <axis
+      xyz="0.00017269 -1 0" />
+    <limit
+      effort="10"
+      velocity="10" />
+    <dynamics
+      damping="0.1"
+      friction="0.1" />
+  </joint>
+  <link
+    name="laser_link">
+    <inertial>
+      <origin
+        xyz="-7.87352785065476E-05 4.35210913261753E-05 -0.0460947333842507"
+        rpy="0 0 0" />
+      <mass
+        value="0.592499687020125" />
+      <inertia
+        ixx="0.000708574668380558"
+        ixy="-1.31489247237473E-06"
+        ixz="1.59540870393123E-06"
+        iyy="0.000706641960070876"
+        iyz="3.8009643048277E-07"
+        izz="0.000809305857816548" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://demopurposeurdf/meshes/lider_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://demopurposeurdf/meshes/lider_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="lider_joint"
+    type="fixed">
+    <origin
+      xyz="0.4538 0 0.359654"
+      rpy="0 0 0" />
+    <parent
+      link="chassis" />
+    <child
+      link="laser_link" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      effort="10"
+      velocity="10" />
+    <dynamics
+      damping="0.1"
+      friction="0.1" />
+  </joint>
+</robot>

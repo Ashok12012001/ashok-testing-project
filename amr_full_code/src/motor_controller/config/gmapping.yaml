@@ -1,0 +1,41 @@
+throttle_scans: 1
+base_frame: "base_link"
+map_frame: "map"
+odom_frame: "odom"
+
+map_update_interval: 1.0  # Reduce update interval
+sigma: 0.05
+kernelSize: 1
+lstep: 0.02
+astep: 0.02
+iterations: 5
+lsigma: 0.075
+ogain: 3.0
+lskip: 0
+#minimumScore: 200.0
+
+srr: 0.05   # Reduced odometry noise
+srt: 0.1
+str: 0.05
+stt: 0.1
+
+linearUpdate: 0.25  # More frequent updates
+angularUpdate: 0.0
+temporalUpdate: 2.0
+resampleThreshold: 0.5
+particles: 100  # Increased particles
+
+xmin: -10.0  # Expanded map area
+ymin: -10.0
+xmax: 10.0
+ymax: 10.0
+delta: 0.1   # Adjust map resolution to 10 cm
+
+llsamplerange: 0.05  # Increased sampling range
+llsamplestep: 0.05
+lasamplerange: 0.02
+lasamplestep: 0.02
+
+transform_publish_period: 0.05
+occ_thresh: 0.25
+

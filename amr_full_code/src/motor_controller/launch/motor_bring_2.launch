@@ -1,0 +1,17 @@
+<launch>
+
+ <!-- <param name="robot_description" command="$(find xacro)/xacro inorder '$(find main_assembly)/urdf/main_assembly.urdf'"/>
+  
+  <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />-->
+
+  <!-- robot state publisher -->
+  <!--<node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" /> -->
+  
+  <node pkg="motor_controller" type="drive_1.py" name="drive_1"  output="screen"/>
+  <node pkg="motor_controller" type="twist_to_motors.py" name="twist_to_motors" output="screen" />
+  <node pkg="motor_controller" type="diff_tf.py" name="diff_tf" output="screen" />
+  <!--<include file="$(find sick_safetyscanners)/launch/sick_safetyscanners.launch" /> -->
+
+ <!-- <include file="$(find sick_scan_xd)/launch/sick_multiscan.launch" /> -->
+
+</launch> 

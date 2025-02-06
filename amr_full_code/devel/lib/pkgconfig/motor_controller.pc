@@ -1,0 +1,8 @@
+prefix=/home/ashokd/ashokd/projects/amr_full_code/devel
+
+Name: motor_controller
+Description: Description of motor_controller
+Version: 0.0.0
+Cflags: -I/home/ashokd/ashokd/projects/amr_full_code/devel/include -I/home/ashokd/ashokd/projects/amr_full_code/src/motor_controller/include
+Libs: -L${prefix}/lib -lmotor_controller
+Requires: roscpp rospy std_msgs message_runtime

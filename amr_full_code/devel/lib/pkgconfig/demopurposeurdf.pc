@@ -1,0 +1,8 @@
+prefix=/home/ashokd/ashokd/projects/amr_full_code/devel
+
+Name: demopurposeurdf
+Description: Description of demopurposeurdf
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

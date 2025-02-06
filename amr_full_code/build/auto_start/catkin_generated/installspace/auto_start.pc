@@ -1,0 +1,8 @@
+prefix=/home/ashokd/ashokd/projects/amr_full_code/install
+
+Name: auto_start
+Description: Description of auto_start
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

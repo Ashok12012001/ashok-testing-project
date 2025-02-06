@@ -1,0 +1,34 @@
+<launch>
+
+ <!-- <arg name="xacro_file" default="$(find demopurposeurdf)/urdf/demopurposeurdf.urdf" />
+  
+  <param name="robot_description" command="$(find xacro)/xacro $(arg xacro_file)" />
+
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
+  <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" /> -->
+  
+  
+  <node pkg="motor_controller" type="drive.py" name="drive"  output="screen"/>
+  <node pkg="motor_controller" type="twist_to_motors.py" name="twist_to_motors" output="screen" />
+  <node pkg="motor_controller" type="diff_tf.py" name="diff_tf" output="screen" />
+  
+  <node pkg="motor_controller" type="robot_start.py" name="robot_start" />
+
+  <node pkg="motor_controller" type="speed_protect.py" name="speed_protect" />
+
+  <node pkg="motor_controller" type="ram_memory_shutdown_ros.py" name="ram_memory_shutdown_ros" />
+  
+  
+  <node pkg="motor_controller" type="custom_button_service_server.py" name="custom_button_service_server" />
+  
+
+  
+  
+
+ <!-- <include file="$(find sick_scan_xd)/launch/sick_multiscan.launch" /> -->
+ <!--<node pkg="rosserial_python" type="serial_node.py" name="serial_node">
+    <param name="port" value="/dev/ttyUSB0"/>
+    <param name="baud" value="115200"/>
+</node> -->
+
+</launch> 
