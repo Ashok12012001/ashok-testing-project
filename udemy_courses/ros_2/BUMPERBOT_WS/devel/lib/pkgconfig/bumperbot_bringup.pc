@@ -1,0 +1,8 @@
+prefix=/home/ashokd/ashok/projects/udemy_courses/BUMPERBOT_WS/devel
+
+Name: bumperbot_bringup
+Description: Description of bumperbot_bringup
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

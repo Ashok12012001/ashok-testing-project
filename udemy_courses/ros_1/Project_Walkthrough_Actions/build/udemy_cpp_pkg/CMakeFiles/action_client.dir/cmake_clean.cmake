@@ -1,0 +1,10 @@
+file(REMOVE_RECURSE
+  "/home/ashokd/ashokd/projects/udemy_courses/Project_Walkthrough_Actions/devel/lib/udemy_cpp_pkg/action_client"
+  "/home/ashokd/ashokd/projects/udemy_courses/Project_Walkthrough_Actions/devel/lib/udemy_cpp_pkg/action_client.pdb"
+  "CMakeFiles/action_client.dir/src/action_client.cpp.o"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/action_client.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

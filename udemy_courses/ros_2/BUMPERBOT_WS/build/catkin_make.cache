@@ -1,0 +1,2 @@
+bumperbot_bringup:bumperbot_controller:bumperbot_cpp_examples:bumperbot_description:bumperbot_firmware:bumperbot_localization:bumperbot_mapping:bumperbot_msgs:bumperbot_utils
+-DCATKIN_DEVEL_PREFIX=/home/ashokd/ashok/projects/udemy_courses/BUMPERBOT_WS/devel -DCMAKE_INSTALL_PREFIX=/home/ashokd/ashok/projects/udemy_courses/BUMPERBOT_WS/install -G Unix Makefiles
